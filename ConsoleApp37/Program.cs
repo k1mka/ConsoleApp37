@@ -2,29 +2,19 @@
 
 namespace ConsoleApp37
 {
-    class Gun
+    class Point
     {
-        private bool isLoaded;
-
-        private void Reload()
+        public Point(int x, int y)
         {
-            Console.WriteLine("Заряжаю..");
-
-            isLoaded = true;
-
-            Console.WriteLine("Заряжено!");
+            _x = x;
+            _y = y;
         }
+        private int _x;
+        private int _y;
 
-        public void Shoot()
+        public void Print()
         {
-            if (!isLoaded)
-            {
-                Console.WriteLine("Оружиме не заряжено");
-                Reload();
-
-            }
-            Console.WriteLine("ТЫЩ! ТЫЩ!\n");
-            isLoaded = false;
+            Console.WriteLine($"X: {_x} , Y: {_y}");
         }
     }
 
@@ -34,8 +24,9 @@ namespace ConsoleApp37
 
         static void Main(string[] args)
         {
-            Gun gun = new Gun();
-            gun.Shoot();
+
+
+
 
         }
     }
