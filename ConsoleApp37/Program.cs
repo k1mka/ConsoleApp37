@@ -35,7 +35,7 @@ namespace ConsoleApp37
         static void Main(string[] args)
         {
             Gun gun = new Gun();
-
+            gun.Shoot();
 
         }
     }
