@@ -24,7 +24,8 @@ namespace ConsoleApp37
 
         static void Main(string[] args)
         {
-
+            Point point = new Point(4, 5);
+            point.Print();
 
 
 
