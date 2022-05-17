@@ -14,7 +14,7 @@ namespace ConsoleApp37
 
         public void Print()
         {
-            Console.WriteLine($"X: {_x} , Y: {_y}");
+            Console.WriteLine($"X: {_x} | Y: {_y}");
         }
     }
 
