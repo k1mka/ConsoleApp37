@@ -2,21 +2,34 @@
 
 namespace ConsoleApp37
 {
-    class Point
+    class Student
     {
-        public Point(int x, int y)
+        public Student(string FirstName, DateTime Birthday)
         {
-            _x = x;
-            _y = y;
+            this.FirstName = FirstName;
+            this.Birthday = Birthday;
         }
-        private int _x;
-        private int _y;
 
+        public Student(string LastName, string MiddleName, string FirstName, DateTime Birthday)
+        {
+            this.LastName = LastName;
+            this.MiddleName = MiddleName;
+            this.Birthday = Birthday;
+            this.FirstName = FirstName;
+        }
         public void Print()
         {
-            Console.WriteLine($"X: {_x} | Y: {_y}");
+            Console.WriteLine($"1) Имя: {FirstName}, 2) Фамилия: {MiddleName}, 3) Дата рождения: {Birthday}, 4) Фамилия: {LastName}");
         }
+
+
+        private string FirstName;
+        private string LastName;
+        private string MiddleName;
+        private DateTime Birthday;
+
     }
+
 
     internal class Program
     {
@@ -24,11 +37,8 @@ namespace ConsoleApp37
 
         static void Main(string[] args)
         {
-            Point point = new Point(4, 5);
-            point.Print();
-
-
-
+            Student student1 = new Student("Артем", new DateTime(22, 02, 1999));
+            student1.Print();
         }
     }
 }
