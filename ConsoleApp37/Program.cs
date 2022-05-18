@@ -10,12 +10,12 @@ namespace ConsoleApp37
             this.Birthday = Birthday;
         }
 
-        public Student(string LastName, string MiddleName, string FirstName, DateTime Birthday)
+        public Student(string LastName, string MiddleName, string FirstName, DateTime Birthday) : this(FirstName, Birthday)
         {
             this.LastName = LastName;
             this.MiddleName = MiddleName;
-            this.Birthday = Birthday;
-            this.FirstName = FirstName;
+
+
         }
         public void Print()
         {
