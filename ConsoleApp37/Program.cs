@@ -37,7 +37,7 @@ namespace ConsoleApp37
 
         static void Main(string[] args)
         {
-            Student student1 = new Student("Артем", new DateTime(2000, 02, 12));
+            Student student1 = new Student("Артем", "Романенко", "Романович", new DateTime(2000, 02, 12));
             student1.Print();
         }
     }
